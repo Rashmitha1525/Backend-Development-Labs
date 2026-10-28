@@ -165,7 +165,7 @@ The application uses `process.env.PORT || 3000` to support deployment platforms.
 
 ### 2. About Page
 
-![About Page](screenshots/about.png)
+![About Page](screenshots/about.spng)
 
 ### 3. Time Page
 
