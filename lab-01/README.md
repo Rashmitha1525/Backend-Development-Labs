@@ -156,9 +156,20 @@ The application uses `process.env.PORT || 3000` to support deployment platforms.
 
 
 
-\## Screenshots
 
-Screenshots of the tested routes will be added to the `screenshots/` folder.
+## Screenshots
+
+### 1. Home Page
+
+![Home Page](screenshots/home.png)
+
+### 2. About Page
+
+![About Page](screenshots/about.png)
+
+### 3. Time Page
+
+![Time Page](screenshots/time.png)
 
 
 
