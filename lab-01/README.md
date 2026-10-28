@@ -163,14 +163,14 @@ The application uses `process.env.PORT || 3000` to support deployment platforms.
 
 ![Home Page](screenshots/home.png)
 
+
 ### 2. About Page
 
-![About Page](screenshots/about.spng)
+![About Page](screenshots/about.png)
 
 ### 3. Time Page
 
 ![Time Page](screenshots/time.png)
-
 
 
 \## Result
