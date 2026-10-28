@@ -1,0 +1,20 @@
+{
+  "name": "lab-01",
+  "version": "1.0.0",
+  "description": "Short description of the project; currently empty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Project author's name; currently empty",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/lab-01.git"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
