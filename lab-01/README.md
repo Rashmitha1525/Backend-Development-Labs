@@ -118,15 +118,19 @@ The following routes were tested in the browser:
 
 ## Screenshots
 
-### 1. Home Page
+### 1. Hello Sai Rashmitha
+
+![Hello Sai Rashmitha](screenshots/hello.png)
+
+### 2. Home Page
 
 ![Home Page](screenshots/home.png)
 
-### 2. About Page
+### 3. About Page
 
 ![About Page](screenshots/about.png)
 
-### 3. Time Page
+### 4. Time Page
 
 ![Time Page](screenshots/time.png)
 
