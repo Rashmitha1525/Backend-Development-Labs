@@ -4,6 +4,10 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.get('/hello', (req, res) => {
+  res.status(200).send('HELLO SAI RASHMITHA');
+});
+
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to my Express Server!');
 });
