@@ -1,168 +1,126 @@
+# Lab 1 — Node.js and Express Server
 
+## Student Details
 
-\# Lab 1 — Node.js and Express Server
+- **Name:** Sai Rashmitha
+- **Section:** CSE (Gen-AI) 2A
+- **University:** Aurora Deemed to be University
+- **Subject:** Backend Development Fundamentals
+- **Year / Term:** Year II, Term II
+- **Faculty:** Mr. Joel Prashanth D.
 
-
-
-\## Student Details
-
-\- \*\*Name:\*\* Sai Rashmitha
-
-\- \*\*Section:\*\* CSE (Gen-AI) 2A
-
-\- \*\*University:\*\* Aurora Deemed to be University
-
-\- \*\*Subject:\*\* Backend Development Fundamentals
-
-\- \*\*Year / Term:\*\* Year II, Term II
-
-\- \*\*Faculty:\*\* Mr. Joel Prashanth D.
-
-
-
-\## Aim
+## Aim
 
 To create a basic HTTP server using Node.js and build a web server using Express.js with multiple routes and error handling.
 
+## Technologies Used
 
-
-\## Technologies Used
-
-\- Node.js
-
-\- Express.js
-
-\- JavaScript
-
-\- Visual Studio Code
-
-\- PowerShell
-
+- Node.js
+- Express.js
+- JavaScript
+- Visual Studio Code
+- PowerShell
+- Git and GitHub
 
 ## GitHub Repository
 
-- GitHub Profile: [Rashmitha1525](https://github.com/Rashmitha1525)
+- **GitHub Profile:** [Rashmitha1525](https://github.com/Rashmitha1525)
+- **Project Repository:** [Backend-Development-Labs](https://github.com/Rashmitha1525/Backend-Development-Labs)
 
-
-\## Project Structure
+## Project Structure
 
 ```text
-
 lab-01/
-
 ├── server.js
-
 ├── app.js
-
 ├── package.json
-
 ├── package-lock.json
-
 ├── .gitignore
-
 ├── README.md
-
 └── screenshots/
-
+    ├── home.png
+    ├── about.png
+    └── time.png
 ```
 
-
-
-\## Part 1: Node.js HTTP Server
+## Part 1: Node.js HTTP Server
 
 The `server.js` file uses Node.js's built-in `http` module to create a server on port 3000. It responds with the text `Hello`.
 
+## Part 2: Express Server
 
+The `app.js` file creates an Express server and includes the following routes:
 
-\## Part 2: Express Server
+- `/` — Displays the welcome message.
+- `/about` — Returns the student's name and section as JSON.
+- `/time` — Returns the current date and time as JSON.
+- Unknown routes — Return a 404 Page Not Found response.
 
-The `app.js` file creates an Express server and includes these routes:
+The application uses `process.env.PORT || 3000` to support deployment platforms that provide a port through an environment variable.
 
+## How to Run
 
+### Prerequisites
 
-\- `/` — Displays the welcome message.
+Install Node.js and npm on your computer.
 
-\- `/about` — Returns the student's name and section as JSON.
+### Step 1: Open the Project Folder
 
-\- `/time` — Returns the current date and time as JSON.
+Open a terminal in the `lab-01` project folder.
 
-\- Unknown routes — Return a 404 Page Not Found response.
+### Step 2: Install Dependencies
 
+Run the following command:
 
+```bash
+npm install
+```
 
-The application uses `process.env.PORT || 3000` to support deployment platforms.
+### Step 3: Run the Node.js HTTP Server
 
+```bash
+node server.js
+```
 
+Open `http://localhost:3000` in your browser to test the basic Node.js server.
 
-\## How to Run
+Stop the server by pressing `Ctrl + C` in the terminal.
 
+### Step 4: Run the Express Server
 
+```bash
+node app.js
+```
 
-1\. Install Node.js.
+Open `http://localhost:3000` in your browser to test the Express application.
 
-2\. Open a terminal in the project folder.
+Keep the terminal running while testing the routes.
 
-3\. Install the dependencies:
+## Testing
 
+The following routes were tested in the browser:
 
+1. **Home Route:** `http://localhost:3000/`
+   - Expected status: 200 OK
+   - Displays: `Welcome to my Express Server!`
 
-&#x20;  ```bash
+2. **About Route:** `http://localhost:3000/about`
+   - Expected status: 200 OK
+   - Returns the student's name and section as JSON.
 
-&#x20;  npm install
+3. **Time Route:** `http://localhost:3000/time`
+   - Expected status: 200 OK
+   - Returns the current date and time as JSON.
 
-&#x20;  ```
-
-
-
-4\. Run the Node.js HTTP server:
-
-
-
-&#x20;  ```bash
-
-&#x20;  node server.js
-
-&#x20;  ```
-
-
-
-5\. Stop it with `Ctrl + C`.
-
-6\. Run the Express server:
-
-
-
-&#x20;  ```bash
-
-&#x20;  node app.js
-
-&#x20;  ```
-
-
-
-7\. Open `http://localhost:3000` in a browser.
-
-
-
-\## Testing
-
-\- `/` — Expected status: 200 OK.
-
-\- `/about` — Expected status: 200 OK with student details in JSON.
-
-\- `/time` — Expected status: 200 OK with current date and time.
-
-\- `/unknown` — Expected status: 404 Not Found.
-
-
-
+4. **404 Error Route:** `http://localhost:3000/unknown`
+   - Expected status: 404 Not Found
+   - Displays: `404 - Page Not Found`
 
 ## Screenshots
 
 ### 1. Home Page
 
 ![Home Page](screenshots/home.png)
-
 
 ### 2. About Page
 
@@ -172,10 +130,6 @@ The application uses `process.env.PORT || 3000` to support deployment platforms.
 
 ![Time Page](screenshots/time.png)
 
+## Result
 
-\## Result
-
-The Node.js HTTP server and Express server were created and tested successfully. The application supports multiple routes and returns a 404 response for unknown routes.
-
-
-
+The Node.js HTTP server and Express server were created and tested successfully. The Express application supports multiple routes, returns JSON responses for the About and Time routes, and handles unknown routes with a 404 response.
